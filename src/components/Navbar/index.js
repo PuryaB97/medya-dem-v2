@@ -35,9 +35,9 @@ const Navbar = ({ toggle }) => {
   };
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo to="/" onClick={toggleHome}>
             <img
               style={{ height: "150%", width: "150%" }}
               src={DemLogo}
@@ -49,10 +49,46 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/">Anasayfa</NavLinks>
-              <NavLinks to="/about">Hakkımızda</NavLinks>
-              <NavLinks to="/services">Hizmetlerimiz</NavLinks>
-              <NavLinks to="/about">Hakkımızda</NavLinks>
+              <NavLinks
+                to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Anasayfa
+              </NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Hakkımızda
+              </NavLinks>
+              <NavLinks
+                to="services"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Hizmetlerimiz
+              </NavLinks>
+              <NavLinks
+                to="discover"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Keşfet
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

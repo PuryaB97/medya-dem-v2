@@ -18,17 +18,17 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="/" onClick={toggle}>
+          <SidebarLink to="home" onClick={toggle}>
             Anasayfa
           </SidebarLink>
-          <SidebarLink to="/about" onClick={toggle}>
+          <SidebarLink to="about" onClick={toggle}>
             Hakkımızda
           </SidebarLink>
-          <SidebarLink to="/services" onClick={toggle}>
+          <SidebarLink to="services" onClick={toggle}>
             Hizmetlerimiz
           </SidebarLink>
-          <SidebarLink to="/about" onClick={toggle}>
-            Hakkımızda
+          <SidebarLink to="discover" onClick={toggle}>
+            Keşfet
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>

@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "../ButtonElement";
+import ShareBtn from "../Share-Btn/ShareBtn";
+
 import {
   Column2,
   Img,
@@ -30,10 +32,12 @@ function HeroSection({
   primary,
   dark,
   dark2,
+  label,
 }) {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
+        <ShareBtn />
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
@@ -43,7 +47,7 @@ function HeroSection({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    to="home"
+                    to={label}
                     smooth={true}
                     duration={500}
                     spy={true}

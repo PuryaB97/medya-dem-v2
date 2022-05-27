@@ -1,0 +1,67 @@
+.share-btn-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  margin-left: 10px;
+  z-index: 10;
+}
+
+.share-btn-container a {
+  font-size: 38px;
+}
+
+.share-btn-container a {
+  margin: 6px 0;
+  transition: 300ms;
+}
+
+.share-btn-container a:hover {
+  transform: scale(1.2);
+}
+
+.share-btn-container a .facebook {
+  color: #2fa4ff;
+}
+
+.share-btn-container a .instagram {
+  color: #ff4848;
+}
+
+.share-btn-container a .linkedin {
+  color: #30aadd;
+}
+
+.share-btn-container a .whatsapp {
+  color: #00ffab;
+}
+
+@media (max-width: 985px) {
+  /* .content {
+      padding: 8px 32px;
+    } */
+
+  .share-btn-container {
+    transform: unset;
+    background-color: #fff;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+    padding: 16px 0;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .share-btn-container a {
+    margin: 0 32px;
+  }
+}

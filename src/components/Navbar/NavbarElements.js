@@ -75,9 +75,13 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+
   &.active {
     border-bottom: 3px solid #990000;
   }
@@ -91,7 +95,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkS)`
+export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   background: #990000;
   white-space: nowrap;
