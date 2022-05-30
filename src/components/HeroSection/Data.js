@@ -30,6 +30,7 @@ export const homeObjTwo = {
   description:
     "Dem Medya Olarak Kurulduğumuz Günden Bu Yana Birçok Seçkin Kurum Ve Kuruluş Için Seçkin Işler Yaptık Ve Yapmaya Devam Ediyoruz.",
   buttonLabel: "İletişime Geç",
+
   imgStart: true,
   img: require("../../images/cover.png"),
   alt: "Piggybank",

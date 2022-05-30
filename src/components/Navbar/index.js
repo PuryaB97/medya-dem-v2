@@ -87,7 +87,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Keşfet
+                Referanslarımız
               </NavLinks>
             </NavItem>
           </NavMenu>

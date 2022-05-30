@@ -10,6 +10,7 @@ import {
 } from "../components/HeroSection/Data";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
+import RefSection from "../components/ReferancesSection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ const Home = () => {
       <HeroSection {...homeObjTwo} />
       <Services />
       <HeroSection {...homeObjThree} />
-      <HeroSection {...homeObjFour} />
+      <RefSection {...homeObjFour} />
       <Footer />
     </>
   );
