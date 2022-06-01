@@ -1,22 +1,23 @@
 import React from "react";
 import Slider from "react-slick";
 
-import { Container, HeadInfo, ImgRow, Img } from "./SlickElements";
+import { HeadInfo, ImgRow, Img } from "./SlickElements";
 import GarantiEgitim from "../../images/referances/garanti-egitim.png";
-import AmericanCulture from "../../images/referances/amerikan-kultur-derneg.jpg";
+import AmericanCulture from "../../images/referances/amerikan-kultur-derneg.png";
 import CerrahTip from "../../images/referances/cerrahi-tip-merkezi.png";
-import TCDD from "../../images/referances/TCDD.png";
+import tcdd from "../../images/referances/TCDD.png";
 import dora from "../../images/referances/dora.png";
-import kusagi from "../../images/referances/z-kusagi.png";
 import kampus from "../../images/referances/kampus.png";
-import jandarma from "../../images/referances/jandarma.jpg";
+import jandarma from "../../images/referances/jandarma.png";
 import gocidaresi from "../../images/referances/goc-idaresi.png";
 import tastinlar from "../../images/referances/tastinlar.png";
-import kayra from "../../images/referances/kayra.jpg";
-import icisleri from "../../images/referances/icisleri.jpg";
+import kayra from "../../images/referances/kayra.png";
+import icisleri from "../../images/referances/icisleri.png";
 import ormngnl from "../../images/referances/ormangnl.png";
 import tarimveorman from "../../images/referances/tarimveorman.png";
 import milliegitim from "../../images/referances/milliegitim.png";
+import institut from "../../images/referances/institut.png";
+import thku from "../../images/referances/THKU.png";
 
 const Slick = () => {
   const settings = {
@@ -25,8 +26,8 @@ const Slick = () => {
     infinite: true,
     centerPadding: "250px",
     autoplay: true,
-    autoplaySpeed: 3000,
-    // cssEase: "linear",
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     slidesToShow: 2,
     speed: 1000,
     rows: 1,
@@ -46,13 +47,10 @@ const Slick = () => {
           <Img src={CerrahTip} alt="garanti eğitim" />
         </ImgRow>
         <ImgRow>
-          <Img src={TCDD} alt="garanti eğitim" />
+          <Img src={tcdd} alt="garanti eğitim" />
         </ImgRow>
         <ImgRow>
           <Img src={dora} alt="garanti eğitim" />
-        </ImgRow>
-        <ImgRow>
-          <Img src={kusagi} alt="garanti eğitim" />
         </ImgRow>
         <ImgRow>
           <Img src={kampus} alt="garanti eğitim" />
@@ -82,25 +80,10 @@ const Slick = () => {
           <Img src={milliegitim} alt="garanti eğitim" />
         </ImgRow>
         <ImgRow>
-          <Img src={GarantiEgitim} alt="garanti eğitim" />
+          <Img src={institut} alt="garanti eğitim" />
         </ImgRow>
         <ImgRow>
-          <Img src={GarantiEgitim} alt="garanti eğitim" />
-        </ImgRow>
-        <ImgRow>
-          <Img src={GarantiEgitim} alt="garanti eğitim" />
-        </ImgRow>
-        <ImgRow>
-          <Img src={GarantiEgitim} alt="garanti eğitim" />
-        </ImgRow>
-        <ImgRow>
-          <Img src={GarantiEgitim} alt="garanti eğitim" />
-        </ImgRow>
-        <ImgRow>
-          <Img src={GarantiEgitim} alt="garanti eğitim" />
-        </ImgRow>
-        <ImgRow>
-          <Img src={GarantiEgitim} alt="garanti eğitim" />
+          <Img src={thku} alt="garanti eğitim" />
         </ImgRow>
       </Slider>
     </>
