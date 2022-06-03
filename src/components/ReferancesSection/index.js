@@ -1,6 +1,5 @@
 import React from "react";
 
-import ShareBtn from "../Share-Btn/ShareBtn";
 import { Button } from "../ButtonElement";
 import { saveAs } from "file-saver";
 import catalog from "../../catalog/dem-catalog.pdf";
@@ -44,7 +43,7 @@ const RefSection = ({
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <Slick />
-        <ShareBtn />
+
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
