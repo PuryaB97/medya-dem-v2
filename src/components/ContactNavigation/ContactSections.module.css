@@ -1,0 +1,179 @@
+.contactUs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 1px 100px;
+}
+
+.contactUs .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.contactUs .title h2 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.form {
+  grid-area: form;
+}
+
+.info {
+  grid-area: info;
+}
+
+.map {
+  grid-area: map;
+}
+
+.contact {
+  padding: 40px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas: "form info" "form map";
+  grid-gap: 20px;
+}
+
+.contact h3 {
+  color: #383838;
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Form */
+
+.formBox {
+  position: relative;
+  width: 100%;
+}
+
+.formBox .row50 {
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.formBox .row100 .inputBox {
+  width: 100%;
+}
+
+.inputBox span {
+  color: #990000;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.inputBox input {
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.inputBox textarea {
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid #ccc;
+  resize: none;
+  /* min-height: 220px; */
+  margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+  background: #990000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px 10px;
+}
+
+.inputBox ::placeholder {
+  color: #73777b;
+}
+
+/* Info */
+
+.info {
+  background: #ccc;
+}
+
+.info h3 {
+  color: #fff;
+}
+
+.Information {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #990000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 1px 1px 18px #990000;
+}
+
+.InfoP {
+  color: #000;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.InfoA {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.sci {
+  margin-top: 40px;
+  display: flex;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  font-size: 2rem;
+  color: #413f42;
+  padding-left: 35px;
+}
+
+.sci li a:hover {
+  color: rgb(171, 171, 171);
+}
