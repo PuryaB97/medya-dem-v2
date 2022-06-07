@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
   padding: 1px 100px;
 }
 
@@ -33,7 +32,7 @@
 
 .contact {
   padding: 40px;
-  background: #fff;
+  background: #ccc;
   border-radius: 5px;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
@@ -88,6 +87,7 @@
   padding: 10px;
   font-size: 1.1rem;
   outline: none;
+  border-radius: 5px;
   border: 1px solid #ccc;
 }
 
@@ -96,8 +96,9 @@
   font-size: 1.1rem;
   outline: none;
   border: 1px solid #ccc;
+  border-radius: 5px;
   resize: none;
-  /* min-height: 220px; */
+  min-height: 220px;
   margin-bottom: 10px;
 }
 
@@ -112,6 +113,10 @@
   padding: 12px 10px;
 }
 
+.inputBox input[type="submit"]:hover {
+  background: #cc0000;
+}
+
 .inputBox ::placeholder {
   color: #73777b;
 }
@@ -123,7 +128,7 @@
 }
 
 .info h3 {
-  color: #fff;
+  color: #383838;
 }
 
 .Information {
@@ -143,7 +148,7 @@
   font-size: 1.5em;
   border-radius: 50%;
   margin-right: 15px;
-  box-shadow: 1px 1px 18px #990000;
+  /* box-shadow: 1px 1px 18px #990000; */
 }
 
 .InfoP {
@@ -176,4 +181,44 @@
 
 .sci li a:hover {
   color: rgb(171, 171, 171);
+}
+
+.map {
+  padding: 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Design */
+
+@media (max-width: 991px) {
+  .contactUs {
+    padding: 20px;
+  }
+
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "form" "info" "map";
+  }
+
+  .map {
+    min-height: 300px;
+  }
+
+  .formBox .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }

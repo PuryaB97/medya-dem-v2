@@ -21,7 +21,7 @@ function Services() {
     <ServicesContainer id="services">
       <ServicesH1>Hizmetlerimiz</ServicesH1>
       <ServicesWrapper>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon6} />
             <ServicesH2>Kurumsal Kimlik</ServicesH2>
@@ -30,7 +30,7 @@ function Services() {
             </ServicesP>
           </ServicesCard>
         </CardLink>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon5} />
             <ServicesH2>Açık Hava</ServicesH2>
@@ -39,7 +39,7 @@ function Services() {
             </ServicesP>
           </ServicesCard>
         </CardLink>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon1} />
             <ServicesH2>Sosyal Medya</ServicesH2>
@@ -48,7 +48,7 @@ function Services() {
             </ServicesP>
           </ServicesCard>
         </CardLink>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon4} />
             <ServicesH2>Grafik Tasarım</ServicesH2>
@@ -57,7 +57,7 @@ function Services() {
             </ServicesP>
           </ServicesCard>
         </CardLink>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon2} />
             <ServicesH2>Web Programlama</ServicesH2>
@@ -66,7 +66,7 @@ function Services() {
             </ServicesP>
           </ServicesCard>
         </CardLink>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon3} />
             <ServicesH2>Radyo, Televizyon, Gazete Ve Dergi</ServicesH2>
@@ -75,7 +75,7 @@ function Services() {
             </ServicesP>
           </ServicesCard>
         </CardLink>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon1} />
             <ServicesH2>Sosyal Medya</ServicesH2>
@@ -84,7 +84,7 @@ function Services() {
             </ServicesP>
           </ServicesCard>
         </CardLink>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon4} />
             <ServicesH2>Grafik Tasarım</ServicesH2>
@@ -93,7 +93,7 @@ function Services() {
             </ServicesP>
           </ServicesCard>
         </CardLink>
-        <CardLink target="_blank" href="https://www.google.com.tr/?hl=tr">
+        <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon2} />
             <ServicesH2>Web Programlama</ServicesH2>

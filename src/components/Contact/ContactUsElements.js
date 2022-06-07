@@ -2,19 +2,18 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  min-height: 100%;
-  position: absolute;
+  height: 100%;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
   z-index: 0;
-  overflow: hidden;
-  background: #990000;
+  background-color: #990000;
 `;
 
 export const Wrap = styled.div`
-  height: 30%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;

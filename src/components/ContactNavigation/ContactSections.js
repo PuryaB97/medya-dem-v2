@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import styles from "./ContactSections.module.css";
 import {
   AiFillTwitterCircle,
   AiOutlineCompass,
-  AiOutlineDownSquare,
   AiOutlineInstagram,
   AiOutlineMail,
   AiOutlineLinkedin,
@@ -13,6 +13,30 @@ import {
 } from "react-icons/ai";
 
 const ContactSections = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ksqji6b",
+        "template_pau8i19",
+        form.current,
+        "fbge5noF1p48IIoQb"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    alert("Mailiniz başarılı bir şekilde gönderildi!");
+  };
+
   return (
     <div className={styles.contactUs}>
       <div className={styles.title}>
@@ -22,34 +46,58 @@ const ContactSections = () => {
         {/* Form */}
         <div className={`${styles.contact} ${styles.form}`}>
           <h3>İletişim Formu</h3>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div className={styles.formBox}>
               <div className={styles.row50}>
                 <div className={styles.inputBox}>
                   <span>Ad</span>
-                  <input type="text" placeholder="Adınız" />
+                  <input
+                    type="text"
+                    placeholder="Adınız"
+                    required
+                    name="user_name"
+                  />
                 </div>
                 <div className={styles.inputBox}>
                   <span>Soyad</span>
-                  <input type="text" placeholder="Soyadınız" />
+                  <input
+                    type="text"
+                    placeholder="Soyadınız"
+                    required
+                    name="last_name"
+                  />
                 </div>
               </div>
 
               <div className={styles.row50}>
                 <div className={styles.inputBox}>
                   <span>Email</span>
-                  <input type="text" placeholder="Email adresiniz" />
+                  <input
+                    type="text"
+                    placeholder="Email adresiniz"
+                    required
+                    name="user_email"
+                  />
                 </div>
                 <div className={styles.inputBox}>
                   <span>Tel No</span>
-                  <input type="text" placeholder="555 444 3322" />
+                  <input
+                    type="text"
+                    placeholder="555 444 3322"
+                    required
+                    name="user_no"
+                  />
                 </div>
               </div>
 
               <div className={styles.row100}>
                 <div className={styles.inputBox}>
                   <span>Mesaj</span>
-                  <textarea placeholder="Mesajınızı yazın..."></textarea>
+                  <textarea
+                    type="text"
+                    placeholder="Mesajınızı yazın..."
+                    name="message"
+                  ></textarea>
                 </div>
               </div>
 
@@ -92,12 +140,20 @@ const ContactSections = () => {
             </div>
             <ul className={styles.sci}>
               <li>
-                <a className={styles.InfoA} href="#">
+                <a
+                  className={styles.InfoA}
+                  href="https://www.facebook.com/demmedya/"
+                  target={`_blank`}
+                >
                   <AiOutlineFacebook />
                 </a>
               </li>
               <li>
-                <a className={styles.InfoA} href="#">
+                <a
+                  className={styles.InfoA}
+                  href="https://www.instagram.com/accounts/login/?next=/medyadem/"
+                  target={`_blank`}
+                >
                   <AiOutlineInstagram />
                 </a>
               </li>
@@ -107,7 +163,11 @@ const ContactSections = () => {
                 </a>
               </li>
               <li>
-                <a className={styles.InfoA} href="#">
+                <a
+                  className={styles.InfoA}
+                  href="https://www.linkedin.com/company/dem-medya/about/"
+                  target={`_blank`}
+                >
                   <AiOutlineLinkedin />
                 </a>
               </li>
@@ -116,7 +176,15 @@ const ContactSections = () => {
         </div>
 
         {/* Map */}
-        <div className={`${styles.contact} ${styles.map}`}></div>
+        <div className={`${styles.contact} ${styles.map}`}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.178391114865!2d32.825361315317075!3d39.892638095270115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d345f59a658cd7%3A0x1b25cbf4cd9c3e50!2zQcWfYcSfxLEgw5Z2ZcOnbGVyLCAxMzI4LiBTay4gTm86MTQsIDA2NDYwIMOHYW5rYXlhL0Fua2FyYQ!5e0!3m2!1str!2str!4v1654586071169!5m2!1str!2str"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
