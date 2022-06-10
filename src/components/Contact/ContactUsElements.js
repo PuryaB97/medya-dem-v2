@@ -31,6 +31,7 @@ export const Icon = styled(Link)`
   font-weight: 700;
   font-size: 32px;
   margin: 0 auto;
+  position: sticky;
 
   @media screen and (max-width: 480px) {
     margin-left: 16px;

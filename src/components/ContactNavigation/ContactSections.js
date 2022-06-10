@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+/* eslint-disable jsx-a11y/iframe-has-title */
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 import styles from "./ContactSections.module.css";
@@ -13,6 +14,10 @@ import {
 } from "react-icons/ai";
 
 const ContactSections = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -84,7 +89,6 @@ const ContactSections = () => {
                   <input
                     type="text"
                     placeholder="555 444 3322"
-                    required
                     name="user_no"
                   />
                 </div>
@@ -158,7 +162,7 @@ const ContactSections = () => {
                 </a>
               </li>
               <li>
-                <a className={styles.InfoA} href="#">
+                <a className={styles.InfoA} href="/#">
                   <AiFillTwitterCircle />
                 </a>
               </li>

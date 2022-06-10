@@ -11,6 +11,7 @@ import {
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 import RefSection from "../components/ReferancesSection";
+import SecondSection from "../components/SecondSection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjTwo} />
+      <SecondSection {...homeObjTwo} />
       <Services />
       <HeroSection {...homeObjThree} />
       <RefSection {...homeObjFour} />
