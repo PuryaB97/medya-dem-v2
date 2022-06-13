@@ -24,7 +24,7 @@ const Slick = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "250px",
+    centerPadding: "215px",
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",

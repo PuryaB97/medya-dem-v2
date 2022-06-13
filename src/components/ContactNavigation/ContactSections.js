@@ -20,6 +20,10 @@ const ContactSections = () => {
 
   const form = useRef();
 
+  const buttonClicked = () => {
+    console.log(form.current);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -107,7 +111,12 @@ const ContactSections = () => {
 
               <div className={styles.row100}>
                 <div className={styles.inputBox}>
-                  <input type="submit" value="Gönder" />
+                  <input
+                    ref={form}
+                    onClick={buttonClicked}
+                    type="submit"
+                    value="Gönder"
+                  />
                 </div>
               </div>
             </div>

@@ -4,6 +4,7 @@ import { Container, Wrap, Icon } from "./ContactUsElements";
 import DemLogo from "../../images/demmedyalogo.png";
 
 import ContactSections from "../ContactNavigation/ContactSections";
+import Footer from "../Footer";
 
 const ContactUs = () => {
   return (
@@ -18,6 +19,9 @@ const ContactUs = () => {
         </Icon>
       </Wrap>
       <ContactSections />
+      <br />
+      <br />
+      <Footer />
     </Container>
   );
 };

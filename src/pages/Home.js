@@ -12,6 +12,7 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 import RefSection from "../components/ReferancesSection";
 import SecondSection from "../components/SecondSection";
+import AfterServices from "../components/AfterServices";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const Home = () => {
       <HeroSection {...homeObjOne} />
       <SecondSection {...homeObjTwo} />
       <Services />
-      <HeroSection {...homeObjThree} />
+      <AfterServices {...homeObjThree} />
       <RefSection {...homeObjFour} />
       <Footer />
     </>
