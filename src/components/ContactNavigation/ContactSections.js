@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import styles from "./ContactSections.module.css";
@@ -14,14 +14,25 @@ import {
 } from "react-icons/ai";
 
 const ContactSections = () => {
+  const [input, setInput] = useState({
+    user_name: "",
+    last_name: "",
+    user_email: "",
+    user_no: "",
+    message: "",
+  });
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const form = useRef();
 
-  const buttonClicked = () => {
-    console.log(form.current);
+  const handleChange = (e) => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const sendEmail = (e) => {
@@ -44,6 +55,8 @@ const ContactSections = () => {
       );
 
     alert("Mailiniz başarılı bir şekilde gönderildi!");
+
+    setInput("");
   };
 
   return (
@@ -65,6 +78,7 @@ const ContactSections = () => {
                     placeholder="Adınız"
                     required
                     name="user_name"
+                    onChange={handleChange}
                   />
                 </div>
                 <div className={styles.inputBox}>
@@ -74,6 +88,7 @@ const ContactSections = () => {
                     placeholder="Soyadınız"
                     required
                     name="last_name"
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -86,6 +101,7 @@ const ContactSections = () => {
                     placeholder="Email adresiniz"
                     required
                     name="user_email"
+                    onChange={handleChange}
                   />
                 </div>
                 <div className={styles.inputBox}>
@@ -94,6 +110,7 @@ const ContactSections = () => {
                     type="text"
                     placeholder="555 444 3322"
                     name="user_no"
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -105,18 +122,14 @@ const ContactSections = () => {
                     type="text"
                     placeholder="Mesajınızı yazın..."
                     name="message"
+                    onChange={handleChange}
                   ></textarea>
                 </div>
               </div>
 
               <div className={styles.row100}>
                 <div className={styles.inputBox}>
-                  <input
-                    ref={form}
-                    onClick={buttonClicked}
-                    type="submit"
-                    value="Gönder"
-                  />
+                  <input ref={form} type="submit" value="Gönder" />
                 </div>
               </div>
             </div>

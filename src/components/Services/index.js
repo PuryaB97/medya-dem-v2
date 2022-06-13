@@ -24,81 +24,88 @@ function Services() {
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon6} />
-            <ServicesH2>Kurumsal Kimlik</ServicesH2>
+            <ServicesH2>Medya Planlama ve Satın Alma</ServicesH2>
             <ServicesP>
-              We help reduce your fess and increase your overall revenue.
+              Logonuzu, markanızı en iyi tanımlayacak şekilde tasarlıyoruz.
             </ServicesP>
           </ServicesCard>
         </CardLink>
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon5} />
-            <ServicesH2>Açık Hava</ServicesH2>
+            <ServicesH2>Açık Hava Reklamcılığı</ServicesH2>
             <ServicesP>
-              You can access our platform online anywhere in the world.
+              Dem Medya, Ankara’da açık hava reklamcılığının lider ajansı
+              konumundadır. 2012 yılından beri onlarca markaya açık hava
+              reklamcılığında hizmet sunmuştur?
             </ServicesP>
           </ServicesCard>
         </CardLink>
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon1} />
-            <ServicesH2>Sosyal Medya</ServicesH2>
+            <ServicesH2>Dijital Reklam ve Sosyal Medya</ServicesH2>
             <ServicesP>
-              Unlock our special membership card that returns 5% cash back.
+              hesaplarınızı potansiyel müşterilerinize ulaştırıyoruz.
             </ServicesP>
           </ServicesCard>
         </CardLink>
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon4} />
-            <ServicesH2>Grafik Tasarım</ServicesH2>
+            <ServicesH2>Web Programlama</ServicesH2>
             <ServicesP>
-              We help reduce your fess and increase your overall revenue.
+              Markanızın ihtiyacı olan kreatif hizmetler dahilinde konsept
+              tasarımlar, kampanyalar oluşturuyor, yönetiyoruz.
             </ServicesP>
           </ServicesCard>
         </CardLink>
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon2} />
-            <ServicesH2>Web Programlama</ServicesH2>
+            <ServicesH2>Kurumsal Kimlik</ServicesH2>
             <ServicesP>
-              You can access our platform online anywhere in the world.
+              Web sayfanız için yazılım çözümleri sunuyor ve yönetiyoruz.
             </ServicesP>
           </ServicesCard>
         </CardLink>
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon3} />
-            <ServicesH2>Radyo, Televizyon, Gazete Ve Dergi</ServicesH2>
+            <ServicesH2>Grafik Tasarım</ServicesH2>
             <ServicesP>
-              Unlock our special membership card that returns 5% cash back.
+              Ürün yerleştirme, spot ve bant reklamı, radyo anonsu gibi birçok
+              hizmetimiz var.
             </ServicesP>
           </ServicesCard>
         </CardLink>
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon1} />
-            <ServicesH2>Sosyal Medya</ServicesH2>
+            <ServicesH2>Prodüksiyon ve Organizasyon</ServicesH2>
             <ServicesP>
-              Unlock our special membership card that returns 5% cash back.
+              Stratejik marka hedeflerinize göre dijital medya mecraları için
+              reklamcılık çözümleri yaratıyoruz.
             </ServicesP>
           </ServicesCard>
         </CardLink>
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon4} />
-            <ServicesH2>Grafik Tasarım</ServicesH2>
+            <ServicesH2>Baskı Hizmetleri ve Promosyon Ürünler</ServicesH2>
             <ServicesP>
-              We help reduce your fess and increase your overall revenue.
+              Yerel ve ulusal medya kurumlarıyla kurmuş olduğumuz işbirlikleri
+              ile firmanız için en etkili kampanyayı yaratıyoruz.
             </ServicesP>
           </ServicesCard>
         </CardLink>
         <CardLink href="#">
           <ServicesCard>
             <ServicesIcon src={Icon2} />
-            <ServicesH2>Web Programlama</ServicesH2>
+            <ServicesH2>Radyo, Televizyon, Sinema Gazete ve Dergi</ServicesH2>
             <ServicesP>
-              You can access our platform online anywhere in the world.
+              İhtiyacınız olan fotoğraf ve video çekimlerini gerçekleştiriyor ve
+              sunuma hazır hale getiriyoruz.
             </ServicesP>
           </ServicesCard>
         </CardLink>

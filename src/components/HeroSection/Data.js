@@ -6,9 +6,9 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: "Dem Medya",
   headLine:
-    "Markanızın parlaması için yeni fikirler ve kreatif çözümlerle hizmet vermeye hazırız.",
+    "Markanızın parlaması için yeni fikirler ve kreatif çözümler ile hizmetinizdeyiz.",
   description:
-    "Dijital medya sektöründe deneyimli proje yöneticileri, yaratıcı yazılım ve tasarım ekibi, dijital pazarlama ve strateji uzmanlarından oluşan bir ekip ile 360 derece reklam hizmeti vermek için çalışıyoruz.",
+    "Dijital medya sektöründe deneyimli proje yöneticileri, yaratıcı yazılım, tasarım, pazarlama ve strateji uzmanlarından oluşan bir ekip ile 360 derece reklam hizmeti vermek için çalışıyoruz.",
   buttonLabel: "Keşfet",
   imgStart: false,
   img: require("../../images/kirmizi-araba-01.png"),

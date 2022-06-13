@@ -6,8 +6,7 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   topLine: "NELER YAPIYORUZ?",
-  headLine:
-    "Reklam ve tanıtım sektörlerinde deneyimli bir ekip ile hizmet veriyoruz.",
+  headLine: "Reklam ve tanıtım sektöründeki deneyimimiz ile hizmetinizdeyiz.",
   description:
     "Dem Medya Olarak Kurulduğumuz Günden Bu Yana Birçok Seçkin Kurum Ve Kuruluş Için Seçkin Işler Yaptık Ve Yapmaya Devam Ediyoruz.",
   buttonLabel: "İletişime Geç",

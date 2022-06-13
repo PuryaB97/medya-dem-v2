@@ -55,6 +55,7 @@ export const TopLine = styled.p`
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
+  letter-spacing: 2px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -64,7 +65,8 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
-  font-weight: 600;
+  /* font-weight: bold; */
+  letter-spacing: 2px;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -74,7 +76,9 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  text-align: justify;
+  text-align: left;
+  letter-spacing: 2px;
+  font-weight: 200;
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
