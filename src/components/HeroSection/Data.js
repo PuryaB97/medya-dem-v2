@@ -26,10 +26,9 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   topLine: "NELER YAPIYORUZ?",
-  headLine:
-    "Reklam ve tanıtım sektörlerinde deneyimli bir ekip ile hizmet veriyoruz.",
+  headLine: "Reklam ve tanıtım sektöründeki deneyimimiz ile hizmetinizdeyiz.",
   description:
-    "Dem Medya Olarak Kurulduğumuz Günden Bu Yana Birçok Seçkin Kurum Ve Kuruluş Için Seçkin Işler Yaptık Ve Yapmaya Devam Ediyoruz.",
+    "Dem Medya olarak kurulduğumuz günden bu yana birçok seçkin kurum ve kuruluş için seçkin işler yaptık.",
   buttonLabel: "İletişime Geç",
 
   imgStart: true,
@@ -45,10 +44,10 @@ export const homeObjThree = {
   lightBg: false,
   lightText: true,
   lightTextDesc: false,
-  topLine: "Join our Team",
-  headLine: "Creating an account is extremely easy",
+  topLine: "Dem Medya",
+  headLine: "Amacımız size 360 derece hizmet vermek.",
   description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go",
+    "Müşterilerinin ihtiyaçlarını çözümlemek için gereken tüm yetkinlik alanlarını kendi çatımız altında barındırıyoruz.",
   buttonLabel: "Start Now",
   imgStart: false,
   img: require("../../images/tasarim.png"),
@@ -64,7 +63,7 @@ export const homeObjFour = {
   lightBg: true,
   lightText: false,
   lightTextDesc: true,
-  topLine: "Join our Team",
+  topLine: "Neler Yaptık?",
   headLine: "Creating an account is extremely easy",
   description:
     "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go",

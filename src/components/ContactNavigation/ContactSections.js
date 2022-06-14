@@ -11,6 +11,7 @@ import {
   AiOutlineLinkedin,
   AiOutlinePhone,
   AiOutlineFacebook,
+  AiOutlineShake,
 } from "react-icons/ai";
 
 const ContactSections = () => {
@@ -158,10 +159,18 @@ const ContactSections = () => {
             </div>
             <div className={styles.Information}>
               <span className={styles.icon}>
-                <AiOutlinePhone />
+                <AiOutlineShake />
               </span>
               <a className={styles.InfoA} href="tel:+090 532 716 2217">
                 0 532 716 2217
+              </a>
+            </div>
+            <div className={styles.Information}>
+              <span className={styles.icon}>
+                <AiOutlinePhone />
+              </span>
+              <a className={styles.InfoA} href="tel:+90 312 417 22 17">
+                +90 312 417 22 17
               </a>
             </div>
             <ul className={styles.sci}>

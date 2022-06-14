@@ -4,9 +4,9 @@ export const homeObjThree = {
   lightText: true,
   lightTextDesc: false,
   topLine: "Join our Team",
-  headLine: "Creating an account is extremely easy",
+  headLine: "Amacımız size 360 derece hizmet vermek.",
   description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go",
+    "Müşterilerinin ihtiyaçlarını çözümlemek için gereken tüm yetkinlik alanlarını kendi çatımız altında barındırıyoruz.",
   buttonLabel: "Start Now",
   imgStart: false,
   img: require("../../images/tasarim.png"),
