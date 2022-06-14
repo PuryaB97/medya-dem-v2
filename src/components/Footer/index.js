@@ -36,7 +36,6 @@ function Footer() {
           <FooterLinkWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Bize Ulaşın</FooterLinkTitle>
-
               <FooterLink to="/#">+90 312 417 22 17</FooterLink>
               <FooterLink to="/#">bilgi@demmedya.com</FooterLink>
             </FooterLinkItems>

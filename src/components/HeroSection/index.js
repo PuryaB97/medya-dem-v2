@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElement";
 import ShareBtn from "../Share-Btn/ShareBtn";
-import { motion } from "framer-motion"
 
 import {
   Column2,

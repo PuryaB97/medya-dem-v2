@@ -36,8 +36,6 @@ export const CardLink = styled.a`
   text-decoration: none;
   color: #000;
 
-  target: "_blank";
-
   a:visited {
     color: #000;
   }

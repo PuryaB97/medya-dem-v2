@@ -33,6 +33,7 @@ export const FooterLinkWrapper = styled.div`
 export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   margin: 16px;
   text-align: left;
@@ -48,12 +49,12 @@ export const FooterLinkItems = styled.div`
 
 export const FooterLinkTitle = styled.h1`
   font-size: 36px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
 `;
 
 export const FooterLink = styled(Link)`
-  display: flex;
-  flex-direction: column;
   width: 200px;
   color: #fff;
   text-decoration: none;
