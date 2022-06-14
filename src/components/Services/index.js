@@ -1,6 +1,5 @@
 import React from "react";
 import Icon1 from "../../images/socialmedia.png";
-import Icon2 from "../../images/web.png";
 import Icon3 from "../../images/designer.png";
 import Icon4 from "../../images/radio.png";
 import Icon5 from "../../images/videography.png";
