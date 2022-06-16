@@ -36,8 +36,12 @@ function Footer() {
           <FooterLinkWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Bize Ulaşın</FooterLinkTitle>
-              <FooterLink to="/#">+90 312 417 22 17</FooterLink>
-              <FooterLink to="/#">bilgi@demmedya.com</FooterLink>
+              <FooterLink href="tel:+90 312 417 22 17">
+                +90 312 417 22 17
+              </FooterLink>
+              <FooterLink href="mailto:bilgi@demmedya.com">
+                bilgi@demmedya.com
+              </FooterLink>
             </FooterLinkItems>
           </FooterLinkWrapper>
         </FooterLinksContainer>

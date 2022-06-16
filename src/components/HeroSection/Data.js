@@ -65,8 +65,9 @@ export const homeObjFour = {
   lightTextDesc: true,
   topLine: "",
   headLine: "Neler Yapıyoruz?",
-  description: "",
-  buttonLabel: "Detaylar için Kataloğu inceleyin",
+  description:
+    "  Bizi daha iyi tanımak, tüm hizmetlerimizin ayrıntılarını incelemek ve bugüne kadar titizlikle tasarladığımız işleri görmek için kataloğumuzu inceleyebilirsiniz. ",
+  buttonLabel: "Kataloğu incele",
   download: "https://demmedya.com/katalog.pdf",
   imgStart: true,
   img: require("../../images/yazilim.png"),

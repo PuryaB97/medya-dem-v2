@@ -32,8 +32,8 @@ function Services() {
               Medya Planlama ve <br /> Satın Alma
             </ServicesH2>
             <ServicesP>
-              Yerel ve ulusal medya kurumlarıyla kurmuş olduğumuz iş birlikleri
-              ile firmanız için en etkili kampanyayı üretiyoruz.
+              Yerel ve ulusal medya kurumlarıyla iş birliği kurarak etkili
+              kampanyalar yürütüyoruz.
             </ServicesP>
           </ServicesCard>
         </CardLink>

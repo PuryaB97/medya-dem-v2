@@ -79,6 +79,7 @@ const ContactSections = () => {
                     placeholder="Adınız"
                     required
                     name="user_name"
+                    value={input.user_name}
                     onChange={handleChange}
                   />
                 </div>
@@ -88,6 +89,7 @@ const ContactSections = () => {
                     type="text"
                     placeholder="Soyadınız"
                     required
+                    value={input.last_name}
                     name="last_name"
                     onChange={handleChange}
                   />
@@ -101,6 +103,7 @@ const ContactSections = () => {
                     type="text"
                     placeholder="Email adresiniz"
                     required
+                    value={input.user_email}
                     name="user_email"
                     onChange={handleChange}
                   />
