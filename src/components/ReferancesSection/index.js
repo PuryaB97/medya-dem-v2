@@ -63,6 +63,7 @@ const RefSection = ({
                       dark={dark ? 1 : 0}
                       dark2={dark2 ? 1 : 0}
                       onClick={saveFile}
+                      fontBig="true"
                     >
                       {buttonLabel}
                     </Button>

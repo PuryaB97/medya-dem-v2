@@ -24,13 +24,8 @@ function AfterServices({
   headLine,
   darkText,
   description,
-  buttonLabel,
   img,
   alt,
-  primary,
-  dark,
-  dark2,
-  label,
 }) {
   return (
     <>

@@ -1,77 +1,59 @@
-import React from "react";
-import { Button } from "../ButtonElement";
-import ShareBtn from "../Share-Btn/ShareBtn";
-
+import React, { useState } from "react";
 import {
-  Column2,
-  Img,
-  ImgWrap,
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
-  Column1,
-  TextWrapper,
-  TopLine,
-  Heading,
-  Subtitle,
-  BtnWrap,
+  HeroContainer,
+  HeroBg,
+  VideoBg,
+  HeroContent,
+  HeroH1,
+  HeroP,
+  HeroBtnWrapper,
+  ArrowForward,
+  ArrowRight,
 } from "./HeroElements";
+import { Button } from "../ButtonElement";
+import Video from "../../videos/video.mp4";
 
-function HeroSection({
-  lightBg,
-  id,
-  imgStart,
-  topLine,
-  lightText,
-  headLine,
-  darkText,
-  description,
-  buttonLabel,
-  img,
-  alt,
-  primary,
-  dark,
-  dark2,
-  label,
-}) {
+const HeroSection = ({ primary, dark, dark2, label }) => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover);
+  };
+
   return (
-    <>
-      <InfoContainer lightBg={lightBg} id={id}>
-        <ShareBtn />
-        <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headLine}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <Button
-                    to={label}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt}></Img>
-              </ImgWrap>
-            </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
-    </>
+    <HeroContainer>
+      <HeroBg>
+        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+      </HeroBg>
+      <HeroContent>
+        <HeroH1>Dem Medya Dem Medya Dem Medya</HeroH1>
+        <HeroP>
+          professor at Hampden-Sydney College in Virginia, looked up one of the
+          more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+          going through the cites of the word in classical literature,
+          discovered the undoubtable source.
+        </HeroP>
+        <HeroBtnWrapper>
+          <Button
+            to="services"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            primary={primary ? 1 : 0}
+            dark={dark ? 1 : 0}
+            dark2={dark2 ? 1 : 0}
+            fontBig="true"
+          >
+            Keşfet {hover ? <ArrowForward /> : <ArrowRight />}
+          </Button>
+        </HeroBtnWrapper>
+      </HeroContent>
+    </HeroContainer>
   );
-}
+};
 
 export default HeroSection;
