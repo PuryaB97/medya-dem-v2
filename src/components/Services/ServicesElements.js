@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const ServicesContainer = styled.div`
   height: 1400px;
@@ -32,7 +33,7 @@ export const ServicesWrapper = styled.div`
   }
 `;
 
-export const CardLink = styled.a`
+export const CardLink = styled(NavLink)`
   text-decoration: none;
   color: #000;
 

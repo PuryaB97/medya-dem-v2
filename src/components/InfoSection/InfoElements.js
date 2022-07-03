@@ -34,7 +34,7 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 0 5px;
   grid-area: col1;
 `;
 

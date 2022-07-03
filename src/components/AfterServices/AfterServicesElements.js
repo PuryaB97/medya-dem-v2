@@ -55,6 +55,7 @@ export const TopLine = styled.p`
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
+  letter-spacing: 2px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;

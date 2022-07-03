@@ -35,13 +35,14 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 0 50px;
+  /* padding-left: 80px; */
   grid-area: col1;
 `;
 
 export const Column2 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 0 10px;
   grid-area: col2;
 `;
 

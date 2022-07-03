@@ -13,7 +13,7 @@ import {
 import { Button } from "../ButtonElement";
 import Video from "../../videos/video.mp4";
 
-const HeroSection = ({ primary, dark, dark2, label }) => {
+const HeroSection = ({ primary, dark, dark2 }) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {

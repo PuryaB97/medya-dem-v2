@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../ButtonElement";
 import ShareBtn from "../Share-Btn/ShareBtn";
 
 import {
@@ -14,7 +13,7 @@ import {
   TopLine,
   Heading,
   Subtitle,
-} from "./HeroElements";
+} from "./InfoElements";
 
 function InfoSection({
   lightBg,
