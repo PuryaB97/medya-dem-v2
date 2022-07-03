@@ -1,4 +1,4 @@
-export const Services = [
+const Data = [
   {
     id: 1,
     icon: require("../../images/medyaplanlama.png"),
@@ -62,3 +62,5 @@ export const Services = [
       "Ürün yerleştirme, spot ve bant reklamı, radyo anonsu gibi birçok hizmet vermekteyiz.",
   },
 ];
+
+export default Data;
