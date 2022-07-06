@@ -5,19 +5,20 @@ import Footer from "../Footer/index";
 
 import { DetailContainer } from "./DetailElements";
 
-import Data from "./Data";
+import Navbar from "../Navbar";
+import productsData from "../Services/Data";
 
-const Detail = ({ data }) => {
+const Detail = () => {
   const { detailId } = useParams();
+  const productId = productsData.find((prod) => prod.id === parseInt(detailId));
 
-  const servicesData = Data.map((data) => {
-    return <div id={detailId}>{data.title}</div>;
-  });
+  console.log(productId);
 
   return (
     <>
+      <Navbar />
       <DetailContainer>
-        <div>{servicesData}</div>
+        <h1>{productId.header}</h1>
       </DetailContainer>
       <Footer />
     </>

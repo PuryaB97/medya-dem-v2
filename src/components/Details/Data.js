@@ -1,4 +1,5 @@
-const Data = [
+// eslint-disable-next-line import/no-anonymous-default-export
+export default [
   {
     id: 1,
     icon: require("../../images/medyaplanlama.png"),
@@ -62,5 +63,3 @@ const Data = [
       "Ürün yerleştirme, spot ve bant reklamı, radyo anonsu gibi birçok hizmet vermekteyiz.",
   },
 ];
-
-export default Data;

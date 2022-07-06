@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ContactPage from "./pages/Contact";
 import DetailsPage from "./pages/Details";
-import data from "../src/components/Services/Data";
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/detail/:detailId" element={<DetailsPage data={data} />} />
+        <Route path="/detail/:detailId" element={<DetailsPage />} />
       </Routes>
     </Router>
   );

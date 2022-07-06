@@ -26,13 +26,8 @@ const HeroSection = ({ primary, dark, dark2 }) => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Dem Medya Dem Medya Dem Medya</HeroH1>
-        <HeroP>
-          professor at Hampden-Sydney College in Virginia, looked up one of the
-          more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-          going through the cites of the word in classical literature,
-          discovered the undoubtable source.
-        </HeroP>
+        <HeroH1>Dem Medya</HeroH1>
+        <HeroP>360 derece hizmet veren reklam ajansı</HeroP>
         <HeroBtnWrapper>
           <Button
             to="services"
